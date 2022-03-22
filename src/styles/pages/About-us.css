@@ -1,0 +1,32 @@
+.aboutUs_text {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 5%;
+}
+.aboutUs_text section {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+.aboutUs_text h2 {
+    margin-bottom: 20px;
+}
+.aboutUs_text svg {
+    width: 100px;
+    height: 110px;
+}
+.centered {
+    width: 70%;
+    margin: 20px auto;
+}
+@media (max-width: 766px) {
+    .aboutUs_text {
+        flex-direction: column;
+    }
+}

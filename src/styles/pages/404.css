@@ -1,0 +1,8 @@
+.pageNotFound {
+    width: 100%;
+    text-align: center;
+}
+.pageNotFound__text {
+    height: calc(90vh - 180px);
+    margin-top: 10vh;
+}

@@ -1,0 +1,27 @@
+.filter {
+    display: inline-flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-evenly;
+}
+.filter__wrapper {
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    text-align: center;
+}
+.filter__wrapper:hover,
+.filter__order:hover {
+    opacity: .6;
+}
+.filter__input {
+    margin: 0 40px;
+}
+.filter__order {
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    background-color: rgb(239, 239, 239);
+    border-radius: 5px;
+    text-align: center;
+}

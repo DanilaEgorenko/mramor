@@ -1,0 +1,109 @@
+.menu__toggle {
+    position: fixed;
+    top: calc(50% - 70px);
+    right: 50px;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    overflow: hidden;
+    appearance: none;
+    border: 0;
+    background-color: transparent;
+    z-index: 1000;
+}
+.menu__toggle span {
+    position: absolute;
+    width: 40px;
+    height: 4px;
+    border-radius: 4px;
+    background: #000;
+    transition: .5s;
+    right: 15px;
+}
+.menu__toggle span:nth-child(1) {
+    transform: translateY(-15px);
+    width: 20px;
+}
+.menu__toggle span:nth-child(3) {
+    transform: translateY(15px);
+    width: 20px;
+}
+.menu__toggle.active span{
+    background: white;
+}
+.menu__toggle.active span:nth-child(1) {
+    width: 40px;
+    transform: translateY(0) rotate(45deg);
+}
+.menu__toggle.active span:nth-child(2) {
+    transform: translateX(60px);
+}
+.menu__toggle.active span:nth-child(3) {
+    width: 40px;
+    transform: translateY(0) rotate(315deg);
+}
+.menu {
+    position: fixed;
+    top: 0;
+    left: 100vw;
+    opacity: 0;
+    height: 100vh;
+    width: 100%;
+    transition: .3s;
+    z-index: 100;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.menu.active {
+    opacity: 1;
+    left: 0;
+}
+.menu a:first-child {
+    color: white;
+    font-size: 1.6em;
+    font-family: 'Montserrat';
+    line-height: 1.23;
+    font-weight: 600;
+}
+.menu a {
+    color: white;
+    font-family: 'Montserrat';
+    padding: 10px;
+    font-size: 1.5em;
+    transition: .2s;
+}
+@media (max-width: 1023px) {
+    .menu__toggle {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+    }
+}
+@media (min-width: 1024px) {
+    .href:not(.activeLink):hover::before,
+    .href:not(.activeLink):hover::after {
+        content: attr(data-text);
+        position: relative;
+        opacity: .3;
+        width: 100%;
+        color: white;
+        font-size: 1.4em;
+    }
+    .href:not(.activeLink):hover::before {
+        top: -80%;
+        left: -100px;
+    }
+    .href:not(.activeLink):hover::after {
+        top: 80%;
+        left: 100px;
+    }
+    .href:not(.activeLink):hover {
+        font-size: 1.4em;
+    }
+}

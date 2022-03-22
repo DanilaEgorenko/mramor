@@ -1,0 +1,8 @@
+.goods {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 310px);
+    gap: 20px;
+    text-align: center;
+    margin: 40px 0;
+    justify-content: center;
+}

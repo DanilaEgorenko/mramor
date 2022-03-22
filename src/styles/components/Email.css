@@ -1,0 +1,31 @@
+.email {
+    display: grid;
+    place-content: center;
+    background: rgb(239, 239, 239);
+    border-radius: 20px;
+    padding: 10px;
+}
+.email > * {
+    margin: 10px 0;
+}
+.email__input {
+    display: flex;
+    gap: 20px;
+}
+.email input {
+    border-radius: 10px;
+    border: 0;
+    padding: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+.email input.errorValidate {
+    background: rgba(255, 0, 0, .5);
+}
+.email button {
+    border: 0;
+    border-radius: 10px;
+    background: aliceblue;
+    padding: 5px;
+    cursor: pointer;
+}

@@ -1,0 +1,30 @@
+.payment__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0 15px;
+}
+.payment__wrapper h2 {
+    margin: 10px 0;
+}
+.payment__svg {
+    height: 90px;
+    width: 90px;
+}
+@media (max-width: 1023px) {
+    .payment__container {
+        display: block;
+    }
+    .payment {
+        height: 100%;
+    }
+}
+@media (min-width: 766px) {
+    .payment__container {
+        display: flex;
+        align-items: center;
+        margin-top: 90px;
+        height: 50vh;
+    }
+}

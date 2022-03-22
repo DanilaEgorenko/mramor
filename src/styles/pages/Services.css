@@ -1,0 +1,51 @@
+.services__wrapper {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.services__container {
+    display: flex;
+    margin: 10px;
+    height: 300px;
+    width: 100%;
+}
+.services__container_img {
+    width: 150px;
+    background-position: center;
+    background-size: cover;
+}
+.services__container:nth-child(1) .services__container_img  {
+    background-image: url('../../assets/services1.webp');
+}
+.services__container:nth-child(2) .services__container_img {
+    background-image: url('../../assets/services2.webp');
+}
+.services__container:nth-child(3) .services__container_img {
+    background-image: url('../../assets/services3.webp');
+}
+.services__container:nth-child(4) .services__container_img {
+    background-image: url('../../assets/services4.webp');
+}
+.services__container_text {
+    width: 100%;
+    margin: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.services ul {
+    margin-left: 20px;
+}
+@media (max-width: 1023px) {
+    .services__container_text {
+        width: 200px;
+        margin: 10px 0;
+        overflow: hidden;
+    }
+    .services__wrapper {
+        grid-template-columns: 100%;
+    }
+    .services__container {
+        margin: 40px 0;
+    }
+}

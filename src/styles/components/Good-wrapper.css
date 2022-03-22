@@ -1,0 +1,47 @@
+.good {
+    cursor: pointer;
+    text-align: center;
+    padding: 5px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+    border-radius: 5px;
+    opacity: 0;
+    animation: good .3s .2s forwards;
+}
+@keyframes good {
+    to {
+        opacity: 1;
+    }
+}
+.good__img {
+    height: 400px;
+    width: 300px;
+    background-position: center;
+    background-size: cover;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+}
+.good__name,
+.good__price,
+.good__button {
+    margin: 10px 0;
+}
+.good__button {
+    border: 0;
+    border-radius: 10px;
+    appearance: none;
+    padding: 10px;
+    cursor: pointer;
+}
+@media (max-width: 760px) {
+    .good {
+        margin: 20px 0;
+        width: 100%;
+    }
+    .good__img {
+        width: auto;
+    }
+}
+@media (min-width: 761px) and (max-width: 1023px) {
+    .good__img {
+        width: auto;
+    }
+}

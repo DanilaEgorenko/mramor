@@ -1,0 +1,44 @@
+{
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "dependencies": {
+    "@types/node": "^12.20.37",
+    "@types/react": "^17.0.37",
+    "@types/react-dom": "^17.0.11",
+    "next": "latest",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "typescript": "latest",
+    "web-vitals": "^1.1.2"
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-next": "^12.1.0"
+  },
+  "eslintConfig": {
+    "extends": [
+      "next-app",
+      "eslint:recommended",
+      "plugin:react/recommended",
+      "plugin:react/jsx-runtime"
+    ]
+  },
+  "name": "mramor",
+  "private": true,
+  "scripts": {
+    "watch": "next dev",
+    "dev-build": "next start",
+    "prod-build": "next build"
+  },
+  "version": "0.1.0"
+}
